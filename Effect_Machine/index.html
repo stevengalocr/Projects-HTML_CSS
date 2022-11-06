@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto de maquina de escribir.</title>
+</head>
+<style>
+    body{
+        background: gainsboro;
+        margin: 0 auto;
+        display: grid;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        position: relative;
+        font-size: 3rem;
+        color: white;
+        padding: 30px;
+        float: left;
+        background: blue;
+
+    }
+    h1 span{
+        position: absolute;
+        right: 0;
+        width: 0;
+        background: blue;
+        border-left: 2px solid white;
+        animation: escribir 4s steps(30) infinite alternate;
+    }
+    @keyframes escribir {
+        from{
+            width: 100%;
+        }
+        top{
+            width: 0;
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Este es un efecto de máquina de escribir :)<span>&#160</span></h1>
+    </div>
+</body>
+</html>
