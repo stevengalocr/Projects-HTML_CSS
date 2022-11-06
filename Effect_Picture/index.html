@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto en una imagen.</title>
+</head>
+<style>
+    .fondo {
+        position: absolute;
+        padding-top: 85px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #78B7DE;
+    }
+
+    .imagen_luz {
+        display: table-cell;
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .imagen_luz .shadow_mini {
+        background-color: rgba(19, 30, 33, 0.4);
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+    }
+
+    .imagen_luz:hover .shadow_mini {
+        background-color: rgba(16, 23, 41, 0);
+    }
+
+    .imagen_luz .title {
+        position: absolute;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        padding: 7px;
+        z-index: 1000;
+        top: 60%;
+        left: -80%;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 13px;
+        width: 80%;
+        -webkit-transition: all 0.7s;
+        -moz-transition: all 0.7s;
+        -ms-transition: all 0.7s;
+        transition: all 0.7s;
+
+    }
+
+    .imagen_luz:hover .title {
+        background-color: #009EFF;
+        left: 0px;
+
+    }
+
+    .imagen_luz .subtitle {
+        position: absolute;
+        font-family: 'Roboto';
+        padding: 5px;
+        z-index: 1000;
+        top: 60%;
+        right: -85%;
+        margin-top: 25px;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 11px;
+        width: 80%;
+        -webkit-transition: all 0.7s;
+        -moz-transition: all 0.7s;
+        -ms-transition: all 0.7s;
+        transition: all 0.7s;
+    }
+
+    .imagen_luz:hover .subtitle {
+        background-color: #044167;
+        right: 0px;
+    }
+</style>
+
+<body>
+    <div align="center" class="fondo">
+        <div class="imagen_luz"
+            style="background-image:url(https://static.wikia.nocookie.net/valorant/images/7/75/You_Wanna_Play_Spray.png/revision/latest/scale-to-width-down/250?cb=20220622153016);">
+            <div class="shadow_mini">
+                <div class="title">TikTok : GaloDev</div>
+                <div class="subtitle">https://github.com/stevengalocr</div>
+            </div>
+        </div>
+        <div
+            style=" padding:5px; color:#044167; font-weight:300; font-size:30px; font-family:'Roboto';padding-top:20px;">
+            GitHub: <font style="font-weight:400;"><u>stevengalocr</u></font>
+        </div>
+        <a href="http://www.wifeo.com/code" style="text-decoration:none;" target="parent">
+            <div style="  color:#000; font-weight:300; font-size:20px; font-family:'Roboto';">https://github.com/stevengalocr
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
